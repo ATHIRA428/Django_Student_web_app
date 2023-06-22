@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Student Form{% endblock %}
+{% block content %}
+<h1>BOOK LIST</h1>
+{% for student in students %}
+    <li>
+    {{student.full_name}}<br>
+</li>
+{% endfor %}   </ul>
+{% endblock %}
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+<title>Student list</title>
+</head>
+<body>
+<h1>BOOK LIST</h1>
+{% for student in students %}
+    <li>
+    {{student.full_name}}<br>
+</li>
+{% endfor %}   </ul>
+</body>
+</html>     {% endcomment %}
